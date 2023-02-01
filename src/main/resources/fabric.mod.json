@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonexpansion",
+  "version": "${version}",
+
+  "name": "Dragon Expansion",
+  "description": "DRAGONS! No need to say more.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.kavefozogepezet.dragonexpansion.DragonExpansion"
+    ],
+    "client": [
+      "net.kavefozogepezet.dragonexpansion.DragonExpansionClient"
+    ]
+  },
+  "mixins": [
+    "dragonexpansion.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
